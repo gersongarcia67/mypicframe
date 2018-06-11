@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['192.168.1.119']
 
 INSTALLED_APPS = [
     'build.apps.BuildConfig',
-    'play.apps.PlayConfig',
+#    'play.apps.PlayConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -21,6 +21,26 @@ import logging
 
 logger=logging.getLogger(__name__)
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'filename': '/home/pi/mypicframe/logs/mypicframe.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+
+
 # Define global variables
 
 basedir="/home/pi/mypicframe"
@@ -61,31 +81,40 @@ def index(request):
 
     files=ListDir()
 
+    for f in files:
+        logger.debug(f)
+
     picture=Pictures()
+    insertList=[]
     for l in files:
-        (primarykey,path,filename,fullpath)=l.split(",")
+        (inprimarykey,path,filename,fullpath)=l.split(",")
 
-        picture.primarykey=primarykey
-        picture.path=path
-        picture.filename=filename
-        picture.save()
+        tpicture=Pictures.objects.filter(primarykey=inprimarykey)
 
-    context={ 'pictures_list': files, 'num_pics': len(files) }
+        if len(tpicture)==0:
 
-    #return HttpResponse(template.render(context,request))
+            picture.primarykey=inprimarykey
+            picture.path=path
+            picture.filename=filename
+            picture.fullpath=fullpath
+            picture.save()
+            insertList.append(fullpath)
+
+    context={ 'pictures_list': insertList, 'num_pics': len(insertList) }
+
     return render(request,'build/index.html',context)
 
 
 def list(request):
 
-    piclist=Pictures.objects.order_by('-primarykey')
+    piclist=Pictures.objects.all()
 
     files=[]
     for f in piclist:
         primarykey=f.primarykey
         path=f.path
         filename=f.filename
-        fullpath=path+"/"+filename
+        fullpath=f.fullpath
 
         files.append("%s,%s,%s,%s" % (primarykey,path,filename,fullpath))
     context={ 'pictures_list': files, 'num_pics': len(files) }

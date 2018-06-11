@@ -8,8 +8,9 @@ from django.db import models
 
 class Pictures(models.Model):
     primarykey = models.CharField(max_length=200,primary_key=True)
-    filename = models.CharField(max_length=200)
-    path = models.CharField(max_length=200)
+    filename = models.CharField(max_length=200,default='')
+    path = models.CharField(max_length=200,default='')
+    fullpath=models.CharField(max_length=400,default='')
     selectcount = models.IntegerField(default=0)
     last_used = models.DateTimeField(default=now)
     removed = models.BooleanField(default=False)

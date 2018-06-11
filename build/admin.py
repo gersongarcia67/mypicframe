@@ -8,6 +8,10 @@ from django.contrib import admin
 from .models import Pictures
 
 class PicturesAdmin(admin.ModelAdmin):
-    list_display=['path','filename']
+    list_display=['fullpath']
+    fields=('primarykey','fullpath','filename','path','last_used','selectcount','removed','favorite')
+    readonly_fields=('primarykey','fullpath','fullpath','filename','path','last_used')
+    save_as=False
+    save_as_continue=False
 
 admin.site.register(Pictures,PicturesAdmin)

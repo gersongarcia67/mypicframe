@@ -1,10 +1,10 @@
 <h1>Return from Build backoffice API</h1>
-<h2>Found {{ num_pics }} files.</h2>
 {% if pictures_list %}
+	<h2>Added {{ num_pics }} new files</h2>
 	{% for pic in pictures_list %}
 		{{ pic }}</br>
 	{% endfor %}
 
 {% else %}
-	<p>No pictures listed.</p>
+	<h2>No pictures added.</h2>
 {% endif %}
