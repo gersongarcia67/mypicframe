@@ -60,9 +60,33 @@ def ListDir():
 def index(request):
 
     files=ListDir()
-    #template=loader.get_template('build/index.html')
+
+    picture=Pictures()
+    for l in files:
+        (primarykey,path,filename,fullpath)=l.split(",")
+
+        picture.primarykey=primarykey
+        picture.path=path
+        picture.filename=filename
+        picture.save()
+
     context={ 'pictures_list': files, 'num_pics': len(files) }
 
     #return HttpResponse(template.render(context,request))
     return render(request,'build/index.html',context)
 
+
+def list(request):
+
+    piclist=Pictures.objects.order_by('-primarykey')
+
+    files=[]
+    for f in piclist:
+        primarykey=f.primarykey
+        path=f.path
+        filename=f.filename
+        fullpath=path+"/"+filename
+
+        files.append("%s,%s,%s,%s" % (primarykey,path,filename,fullpath))
+    context={ 'pictures_list': files, 'num_pics': len(files) }
+    return render(request,'build/list.html',context)

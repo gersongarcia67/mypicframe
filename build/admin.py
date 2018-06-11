@@ -7,4 +7,7 @@ from django.contrib import admin
 
 from .models import Pictures
 
-admin.site.register(Pictures)
+class PicturesAdmin(admin.ModelAdmin):
+    list_display=['path','filename']
+
+admin.site.register(Pictures,PicturesAdmin)
