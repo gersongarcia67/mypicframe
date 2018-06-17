@@ -242,3 +242,31 @@
 2018-06-16 21:46:25,372 [Thread-8    ] [INFO ] [build.views         ]  File already in DB 20171230_152211JPG /home/pi/Pictures 20171230_152211.jpg /home/pi/Pictures/20171230_152211.jpg
 2018-06-16 21:46:25,403 [Thread-8    ] [INFO ] [build.views         ]  File already in DB IMG_2010JPG /home/pi/Pictures IMG_2010.JPG /home/pi/Pictures/IMG_2010.JPG
 2018-06-16 21:46:25,445 [Thread-8    ] [INFO ] [django.server       ]  "GET /build/ HTTP/1.1" 200 73
+2018-06-16 21:49:51,668 [Thread-9    ] [INFO ] [build.views         ]  Read files from /home/pi/Pictures
+2018-06-16 21:49:51,683 [Thread-9    ] [INFO ] [build.views         ]  20171230_170545.jpg
+2018-06-16 21:49:51,691 [Thread-9    ] [INFO ] [build.views         ]  20171230_152217.jpg
+2018-06-16 21:49:51,699 [Thread-9    ] [INFO ] [build.views         ]  20171230_152212.jpg
+2018-06-16 21:49:51,708 [Thread-9    ] [INFO ] [build.views         ]  20171230_152216.jpg
+2018-06-16 21:49:51,715 [Thread-9    ] [INFO ] [build.views         ]  20171230_152118.jpg
+2018-06-16 21:49:51,721 [Thread-9    ] [INFO ] [build.views         ]  20171230_152143.jpg
+2018-06-16 21:49:51,727 [Thread-9    ] [INFO ] [build.views         ]  20171230_152131.jpg
+2018-06-16 21:49:51,733 [Thread-9    ] [INFO ] [build.views         ]  20171230_152116.jpg
+2018-06-16 21:49:51,739 [Thread-9    ] [INFO ] [build.views         ]  20171230_152146.jpg
+2018-06-16 21:49:51,745 [Thread-9    ] [INFO ] [build.views         ]  20171230_152129.jpg
+2018-06-16 21:49:51,751 [Thread-9    ] [INFO ] [build.views         ]  20171230_152142.jpg
+2018-06-16 21:49:51,758 [Thread-9    ] [INFO ] [build.views         ]  20171230_152211.jpg
+2018-06-16 21:49:51,763 [Thread-9    ] [INFO ] [build.views         ]  IMG_2010.JPG
+2018-06-16 21:49:51,806 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_170545JPG /home/pi/Pictures 20171230_170545.jpg /home/pi/Pictures/20171230_170545.jpg
+2018-06-16 21:49:51,834 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152217JPG /home/pi/Pictures 20171230_152217.jpg /home/pi/Pictures/20171230_152217.jpg
+2018-06-16 21:49:51,863 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152212JPG /home/pi/Pictures 20171230_152212.jpg /home/pi/Pictures/20171230_152212.jpg
+2018-06-16 21:49:51,892 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152216JPG /home/pi/Pictures 20171230_152216.jpg /home/pi/Pictures/20171230_152216.jpg
+2018-06-16 21:49:51,921 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152118JPG /home/pi/Pictures 20171230_152118.jpg /home/pi/Pictures/20171230_152118.jpg
+2018-06-16 21:49:51,949 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152143JPG /home/pi/Pictures 20171230_152143.jpg /home/pi/Pictures/20171230_152143.jpg
+2018-06-16 21:49:51,983 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152131JPG /home/pi/Pictures 20171230_152131.jpg /home/pi/Pictures/20171230_152131.jpg
+2018-06-16 21:49:52,013 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152116JPG /home/pi/Pictures 20171230_152116.jpg /home/pi/Pictures/20171230_152116.jpg
+2018-06-16 21:49:52,043 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152146JPG /home/pi/Pictures 20171230_152146.jpg /home/pi/Pictures/20171230_152146.jpg
+2018-06-16 21:49:52,073 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152129JPG /home/pi/Pictures 20171230_152129.jpg /home/pi/Pictures/20171230_152129.jpg
+2018-06-16 21:49:52,103 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152142JPG /home/pi/Pictures 20171230_152142.jpg /home/pi/Pictures/20171230_152142.jpg
+2018-06-16 21:49:52,133 [Thread-9    ] [INFO ] [build.views         ]  File already in DB 20171230_152211JPG /home/pi/Pictures 20171230_152211.jpg /home/pi/Pictures/20171230_152211.jpg
+2018-06-16 21:49:52,163 [Thread-9    ] [INFO ] [build.views         ]  File already in DB IMG_2010JPG /home/pi/Pictures IMG_2010.JPG /home/pi/Pictures/IMG_2010.JPG
+2018-06-16 21:49:52,198 [Thread-9    ] [INFO ] [django.server       ]  "GET /build/ HTTP/1.1" 200 73
