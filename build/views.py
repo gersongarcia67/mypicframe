@@ -18,27 +18,7 @@ import datetime
 import re
 
 import logging
-
-logger=logging.getLogger(__name__)
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-            'filename': '/home/pi/mypicframe/logs/mypicframe.log',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
+log=logging.getLogger(__name__)
 
 
 # Define global variables
@@ -54,13 +34,15 @@ picdir="/home/pi/Pictures"
 def ListDir():
 
     aFiles=[]
+    log.info("Read files from %s" % picdir)
     if not os.path.exists(picdir):
-        print ("Directory %s not found" % picdir)
+        log.error("Directory %s not found" % picdir)
         return
 
     for path,subdirs,files in os.walk(picdir):
         for name in files:
 
+            log.info(name)
             if not re.search('\.jpg',name,re.I): continue
 
             primkey=os.path.join(path,name)
@@ -81,9 +63,6 @@ def index(request):
 
     files=ListDir()
 
-    for f in files:
-        logger.debug(f)
-
     picture=Pictures()
     insertList=[]
     for l in files:
@@ -99,6 +78,10 @@ def index(request):
             picture.fullpath=fullpath
             picture.save()
             insertList.append(fullpath)
+
+            log.info("File added %s %s %s %s" % ( inprimarykey,path,filename,fullpath ))
+        else:
+            log.info("File already in DB %s %s %s %s" % ( inprimarykey,path,filename,fullpath)) 
 
     context={ 'pictures_list': insertList, 'num_pics': len(insertList) }
 
