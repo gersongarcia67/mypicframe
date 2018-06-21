@@ -11,7 +11,7 @@ from django.shortcuts import render
 
 from .models import Pictures
 
-import os
+import os,random
 from os import listdir
 from os.path import isfile, join
 import datetime
@@ -29,6 +29,7 @@ tmpdir=basedir+"/tmp"
 logdir=basedir+"logs"
 #picdir="/mnt/pictures/Family"
 picdir="/home/pi/Pictures"
+maxpic=10
 
 
 def ListDir():
@@ -63,25 +64,35 @@ def index(request):
 
     files=ListDir()
 
-    picture=Pictures()
+#    picture=Pictures()
     insertList=[]
     for l in files:
         (inprimarykey,path,filename,fullpath)=l.split(",")
 
+        print "Check if "+inprimarykey+" exists"
         tpicture=Pictures.objects.filter(primarykey=inprimarykey)
 
         if len(tpicture)==0:
 
+            print inprimarykey+" not found"
+
+            picture=Pictures()
             picture.primarykey=inprimarykey
             picture.path=path
             picture.filename=filename
             picture.fullpath=fullpath
+
             picture.save()
+
+            picid=picture.id
             insertList.append(fullpath)
 
-            log.info("File added %s %s %s %s" % ( inprimarykey,path,filename,fullpath ))
+            log.info("File added %s %s %s %s %s" % ( str(picid),inprimarykey,path,filename,fullpath ))
+
         else:
-            log.info("File already in DB %s %s %s %s" % ( inprimarykey,path,filename,fullpath)) 
+            picid=tpicture[0].id
+            print inprimarykey+" exists"
+            log.info("File already in DB %s %s %s %s %s" % ( str(picid),inprimarykey,path,filename,fullpath)) 
 
     context={ 'pictures_list': insertList, 'num_pics': len(insertList) }
 
@@ -94,11 +105,42 @@ def list(request):
 
     files=[]
     for f in piclist:
+        pictureid=f.id
         primarykey=f.primarykey
         path=f.path
         filename=f.filename
         fullpath=f.fullpath
 
-        files.append("%s,%s,%s,%s" % (primarykey,path,filename,fullpath))
+        files.append("%s,%s,%s,%s,%s" % (str(pictureid),primarykey,path,filename,fullpath))
     context={ 'pictures_list': files, 'num_pics': len(files) }
     return render(request,'build/list.html',context)
+
+def randomSelect(request):
+
+    numpics=len(Pictures.objects.all())
+
+    picndx=[]
+    piclist=[]
+
+    while len(picndx)<maxpic:
+
+        rnd=random.randint(1,numpics)
+        if not rnd in picndx: 
+
+            tpicture=Pictures.objects.filter(id=rnd)
+
+            if len(tpicture)!=0:
+                pictureid=tpicture[0].id
+                primarykey=tpicture[0].primarykey
+                path=tpicture[0].path
+                filename=tpicture[0].filename
+                fullpath=tpicture[0].fullpath
+
+                piclist.append("%s,%s,%s,%s,%s,%s" % (str(rnd),str(pictureid),primarykey,path,filename,fullpath))
+                picndx.append(rnd)
+
+
+    context={ 'random_list': piclist }
+    return render(request,'build/selected.html',context)
+
+    

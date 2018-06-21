@@ -7,7 +7,7 @@ from django.db import models
 # Create your models here.
 
 class Pictures(models.Model):
-    primarykey = models.CharField(max_length=200,primary_key=True)
+    primarykey = models.CharField(max_length=200,null=False)
     filename = models.CharField(max_length=200,default='')
     path = models.CharField(max_length=200,default='')
     fullpath=models.CharField(max_length=400,default='')

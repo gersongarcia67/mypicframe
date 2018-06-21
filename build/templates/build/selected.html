@@ -1,0 +1,9 @@
+<h1>Random Selected API</h1>
+{% if random_list %}
+	{% for pic in random_list %}
+		{{ pic }}</br>
+	{% endfor %}
+
+{% else %}
+	<p>No pictures listed.</p>
+{% endif %}
