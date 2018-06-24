@@ -6,6 +6,7 @@ from django.shortcuts import render
 # Create your views here.
 
 from django.http import HttpResponse
+from django.http import Http404
 from django.template import loader
 from django.shortcuts import render
 
@@ -15,7 +16,10 @@ import os,random
 from os import listdir
 from os.path import isfile, join
 import datetime
+import time
+from datetime import date, datetime
 import re
+import shutil
 
 import logging
 log=logging.getLogger(__name__)
@@ -30,6 +34,7 @@ logdir=basedir+"logs"
 #picdir="/mnt/pictures/Family"
 picdir="/home/pi/Pictures"
 maxpic=10
+jpegtran='/usr/bin/jpegtran'
 
 
 def ListDir():
@@ -58,6 +63,31 @@ def ListDir():
             aFiles.append("%s,%s,%s,%s" % (primkey,path,name,os.path.join(path,name)))
 
     return aFiles
+
+def jpegtranRun(infile,outfile):
+
+    if not os.path.isfile(infile):
+        log.error('Error: %s not found.' % infile)
+        return
+
+    cmd=jpegtran+' -optimize -progressive '+infile+' > '+outfile
+    log.info('Running: %s' % cmd)
+
+    try:
+        os.system(cmd)
+    except:
+        log.error('Failed, try pure copy')
+        try:
+            shutil.copy2(infile,outfile)
+        except:
+            log.error('Copy also failed')
+
+    if os.path.isfile(outfile):
+        log.info('Done: file %s created' % outfile)
+    else:
+        log.error('Ops, something went wrong. File %s not found.' % outfile)
+
+    return
 
 
 def index(request):
@@ -115,7 +145,20 @@ def list(request):
     context={ 'pictures_list': files, 'num_pics': len(files) }
     return render(request,'build/list.html',context)
 
+
 def randomSelect(request):
+
+    if not os.path.exists(tmpdir):
+        log.info('Temp dir %s not found, create it' % tmpdir)
+        try:
+            os.mkdir(tmpdir)
+        except:
+            raise Http404('<h1>Unable to create %s</h1>' % tmpdir)
+
+    for path,subdirs,files in os.walk(tmpdir):
+        if len(files)>0:
+            log.error('Temp dir %s is not empty.' % tmpdir)
+            raise Http404('<h1>Temp dir '+tmpdir+' is not empty</h1>')
 
     numpics=len(Pictures.objects.all())
 
@@ -135,6 +178,18 @@ def randomSelect(request):
                 path=tpicture[0].path
                 filename=tpicture[0].filename
                 fullpath=tpicture[0].fullpath
+                selectcount=tpicture[0].selectcount
+
+                outfile=tmpdir+'/'+filename
+
+                # Update LastUsed and SelectCount fields
+
+                tpicture[0].last_used=datetime.now()
+                tpicture[0].selectcount=selectcount+1
+                tpicture[0].save()
+
+
+                jpegtranRun(fullpath,outfile)
 
                 piclist.append("%s,%s,%s,%s,%s,%s" % (str(rnd),str(pictureid),primarykey,path,filename,fullpath))
                 picndx.append(rnd)

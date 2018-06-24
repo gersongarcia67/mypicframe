@@ -52,7 +52,8 @@ LOGGING = {
             'level': min_level, # this level or higher goes to the log file
             'class':'logging.handlers.RotatingFileHandler',
             # IMPORTANT: replace with your desired logfile name!
-            'filename': os.path.join(BASE_DIR, 'djangoproject.log'),
+#            'filename': os.path.join(BASE_DIR, 'djangoproject.log'),
+            'filename': '/home/pi/mypicframe/logs/mypicframe.log',
             'maxBytes': 50 * 10**6, # will 50 MB do?
             'backupCount': 3, # keep this many extra historical files
             'formatter': 'timestampthread'

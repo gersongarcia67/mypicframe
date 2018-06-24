@@ -1,0 +1,230 @@
+2018-06-21 22:02:08,175 [Thread-1    ] [ERROR] [build.views         ]  Temp dir /home/pi/mypicframe/tmp is not empty.
+2018-06-21 22:02:08,295 [Thread-1    ] [WARNI] [django.request      ]  Not Found: /build/random
+2018-06-21 22:02:08,310 [Thread-1    ] [WARNI] [django.server       ]  "GET /build/random HTTP/1.1" 404 1764
+2018-06-21 22:10:05,473 [Thread-3    ] [INFO ] [build.views         ]  Temp dir /home/pi/mypicframe/tmp not found, create it
+2018-06-21 22:10:05,756 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/2000_05_28_Home/pic28837.jpg > /home/pi/mypicframe/tmp/pic28837.jpg
+2018-06-21 22:10:06,037 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/pic28837.jpg created
+2018-06-21 22:10:06,075 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/ge02.jpg > /home/pi/mypicframe/tmp/ge02.jpg
+2018-06-21 22:10:06,257 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/ge02.jpg created
+2018-06-21 22:10:06,293 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/leocris.jpg > /home/pi/mypicframe/tmp/leocris.jpg
+2018-06-21 22:10:06,536 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/leocris.jpg created
+2018-06-21 22:10:06,574 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_XX_Sacramento/Scan221.jpg > /home/pi/mypicframe/tmp/Scan221.jpg
+2018-06-21 22:10:10,905 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/Scan221.jpg created
+2018-06-21 22:10:10,943 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_05_XX_PasseioBicicletaEDS/Scan210.jpg > /home/pi/mypicframe/tmp/Scan210.jpg
+2018-06-21 22:10:15,059 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/Scan210.jpg created
+2018-06-21 22:10:15,100 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_05_XX_PasseioBicicletaEDS/Scan212.jpg > /home/pi/mypicframe/tmp/Scan212.jpg
+2018-06-21 22:10:19,156 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/Scan212.jpg created
+2018-06-21 22:10:19,192 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/crisleo02.jpg > /home/pi/mypicframe/tmp/crisleo02.jpg
+2018-06-21 22:10:19,386 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/crisleo02.jpg created
+2018-06-21 22:10:19,423 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/20171230_152129.jpg > /home/pi/mypicframe/tmp/20171230_152129.jpg
+2018-06-21 22:10:24,835 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/20171230_152129.jpg created
+2018-06-21 22:10:24,873 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/figura.jpg > /home/pi/mypicframe/tmp/figura.jpg
+2018-06-21 22:10:25,118 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/figura.jpg created
+2018-06-21 22:10:25,155 [Thread-3    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/citara.jpg > /home/pi/mypicframe/tmp/citara.jpg
+2018-06-21 22:10:25,397 [Thread-3    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/citara.jpg created
+2018-06-21 22:10:25,473 [Thread-3    ] [INFO ] [django.server       ]  "GET /build/random HTTP/1.1" 200 1533
+2018-06-21 22:37:21,869 [Thread-4    ] [ERROR] [build.views         ]  Temp dir /home/pi/mypicframe/tmp is not empty.
+2018-06-21 22:37:21,959 [Thread-4    ] [WARNI] [django.request      ]  Not Found: /build/random
+2018-06-21 22:37:21,970 [Thread-4    ] [WARNI] [django.server       ]  "GET /build/random HTTP/1.1" 404 1764
+2018-06-22 18:54:25,388 [Thread-5    ] [ERROR] [build.views         ]  Temp dir /home/pi/mypicframe/tmp is not empty.
+2018-06-22 18:54:25,477 [Thread-5    ] [WARNI] [django.request      ]  Not Found: /build/random
+2018-06-22 18:54:25,487 [Thread-5    ] [WARNI] [django.server       ]  "GET /build/random HTTP/1.1" 404 1764
+2018-06-22 18:54:34,378 [Thread-6    ] [INFO ] [django.server       ]  "GET /build/list HTTP/1.1" 200 12894
+2018-06-24 13:32:46,010 [Thread-7    ] [INFO ] [django.server       ]  "GET /build/list HTTP/1.1" 200 12894
+2018-06-24 13:35:43,213 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/thanksgiving04.jpg > /home/pi/mypicframe/tmp/thanksgiving04.jpg
+2018-06-24 13:35:43,413 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/thanksgiving04.jpg created
+2018-06-24 13:35:43,448 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_XX_Sacramento/Scan220.jpg > /home/pi/mypicframe/tmp/Scan220.jpg
+2018-06-24 13:35:47,942 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/Scan220.jpg created
+2018-06-24 13:35:47,978 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/20171230_152216.jpg > /home/pi/mypicframe/tmp/20171230_152216.jpg
+2018-06-24 13:35:54,168 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/20171230_152216.jpg created
+2018-06-24 13:35:54,203 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_XX_Sacramento/Scan218.jpg > /home/pi/mypicframe/tmp/Scan218.jpg
+2018-06-24 13:35:58,246 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/Scan218.jpg created
+2018-06-24 13:35:58,280 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/cris02.jpg > /home/pi/mypicframe/tmp/cris02.jpg
+2018-06-24 13:35:58,467 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/cris02.jpg created
+2018-06-24 13:35:58,502 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/torneio.jpg > /home/pi/mypicframe/tmp/torneio.jpg
+2018-06-24 13:35:58,741 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/torneio.jpg created
+2018-06-24 13:35:58,776 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/churrasco.jpg > /home/pi/mypicframe/tmp/churrasco.jpg
+2018-06-24 13:35:59,016 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/churrasco.jpg created
+2018-06-24 13:35:59,051 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/20171230_152129.jpg > /home/pi/mypicframe/tmp/20171230_152129.jpg
+2018-06-24 13:36:04,433 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/20171230_152129.jpg created
+2018-06-24 13:36:04,467 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/huummm3.jpg > /home/pi/mypicframe/tmp/huummm3.jpg
+2018-06-24 13:36:04,707 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/huummm3.jpg created
+2018-06-24 13:36:04,742 [Thread-8    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/20171230_152142.jpg > /home/pi/mypicframe/tmp/20171230_152142.jpg
+2018-06-24 13:36:12,334 [Thread-8    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/20171230_152142.jpg created
+2018-06-24 13:36:12,383 [Thread-8    ] [INFO ] [django.server       ]  "GET /build/random HTTP/1.1" 200 1413
+2018-06-24 13:37:26,112 [Thread-9    ] [INFO ] [django.server       ]  "GET /admin/build/pictures/ HTTP/1.1" 200 28117
+2018-06-24 13:37:26,507 [Thread-11   ] [INFO ] [django.server       ]  "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2018-06-24 13:37:26,585 [Thread-10   ] [INFO ] [django.server       ]  "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2018-06-24 13:37:26,661 [Thread-13   ] [INFO ] [django.server       ]  "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2018-06-24 13:37:26,671 [Thread-15   ] [INFO ] [django.server       ]  "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2018-06-24 13:37:26,676 [Thread-16   ] [INFO ] [django.server       ]  "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2018-06-24 13:37:26,957 [Thread-18   ] [INFO ] [django.server       ]  "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2018-06-24 13:37:26,978 [Thread-19   ] [INFO ] [django.server       ]  "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2018-06-24 13:37:27,006 [Thread-20   ] [INFO ] [django.server       ]  "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2018-06-24 13:37:27,210 [Thread-12   ] [INFO ] [django.server       ]  "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+2018-06-24 13:37:27,270 [Thread-21   ] [INFO ] [django.server       ]  "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2018-06-24 13:37:27,421 [Thread-14   ] [INFO ] [django.server       ]  "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+2018-06-24 13:37:27,530 [Thread-17   ] [INFO ] [django.server       ]  "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2018-06-24 13:37:27,965 [Thread-25   ] [INFO ] [django.server       ]  "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2018-06-24 13:37:28,034 [Thread-22   ] [INFO ] [django.server       ]  "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+2018-06-24 13:37:28,055 [Thread-23   ] [INFO ] [django.server       ]  "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+2018-06-24 13:37:28,174 [Thread-24   ] [INFO ] [django.server       ]  "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+2018-06-24 13:38:18,278 [Thread-26   ] [INFO ] [django.server       ]  "GET /admin/build/pictures/93/change/ HTTP/1.1" 200 7376
+2018-06-24 13:38:18,496 [Thread-28   ] [INFO ] [django.server       ]  "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+2018-06-24 13:38:18,740 [Thread-27   ] [INFO ] [django.server       ]  "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+2018-06-24 13:38:18,943 [Thread-29   ] [INFO ] [django.server       ]  "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+2018-06-24 13:38:18,978 [Thread-30   ] [INFO ] [django.server       ]  "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+2018-06-24 13:38:18,981 [Thread-31   ] [INFO ] [django.server       ]  "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+2018-06-24 13:56:20,497 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1064 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5ee5e70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 13:56:55,882 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /build/random
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/mypicframe/build/views.py", line 185, in randomSelect
+    tpicture[0].last_used=now()
+NameError: global name 'now' is not defined
+2018-06-24 13:56:59,484 [Thread-1    ] [ERROR] [django.server       ]  "GET /build/random HTTP/1.1" 500 71946
+2018-06-24 14:01:22,174 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1076 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5e4ee70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 14:01:36,126 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /build/random
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/mypicframe/build/views.py", line 187, in randomSelect
+    tpicture.save()
+AttributeError: 'QuerySet' object has no attribute 'save'
+2018-06-24 14:01:39,735 [Thread-1    ] [ERROR] [django.server       ]  "GET /build/random HTTP/1.1" 500 72122
+2018-06-24 14:02:40,307 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1047 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5ecfe70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 14:02:54,546 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/20171230_152216.jpg > /home/pi/mypicframe/tmp/20171230_152216.jpg
+2018-06-24 14:03:00,598 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/20171230_152216.jpg created
+2018-06-24 14:03:00,694 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/huummm3.jpg > /home/pi/mypicframe/tmp/huummm3.jpg
+2018-06-24 14:03:00,934 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/huummm3.jpg created
+2018-06-24 14:03:01,035 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/0000_00_00_Georgina/mama_004.jpg > /home/pi/mypicframe/tmp/mama_004.jpg
+2018-06-24 14:03:01,202 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/mama_004.jpg created
+2018-06-24 14:03:01,300 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/trickortreat03.jpg > /home/pi/mypicframe/tmp/trickortreat03.jpg
+2018-06-24 14:03:01,545 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/trickortreat03.jpg created
+2018-06-24 14:03:01,637 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/neve006.jpg > /home/pi/mypicframe/tmp/neve006.jpg
+2018-06-24 14:03:01,882 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/neve006.jpg created
+2018-06-24 14:03:01,983 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/plazadonwtonw02.jpg > /home/pi/mypicframe/tmp/plazadonwtonw02.jpg
+2018-06-24 14:03:02,181 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/plazadonwtonw02.jpg created
+2018-06-24 14:03:02,286 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/plazadowntonw01.jpg > /home/pi/mypicframe/tmp/plazadowntonw01.jpg
+2018-06-24 14:03:02,488 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/plazadowntonw01.jpg created
+2018-06-24 14:03:02,609 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/thanksgiving04.jpg > /home/pi/mypicframe/tmp/thanksgiving04.jpg
+2018-06-24 14:03:02,808 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/thanksgiving04.jpg created
+2018-06-24 14:03:02,904 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/ge01.jpg > /home/pi/mypicframe/tmp/ge01.jpg
+2018-06-24 14:03:03,087 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/ge01.jpg created
+2018-06-24 14:03:03,188 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/boneco_de_neve.jpg > /home/pi/mypicframe/tmp/boneco_de_neve.jpg
+2018-06-24 14:03:03,558 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/boneco_de_neve.jpg created
+2018-06-24 14:03:03,644 [Thread-1    ] [INFO ] [django.server       ]  "GET /build/random HTTP/1.1" 200 1458
+2018-06-24 14:03:36,444 [Thread-3    ] [INFO ] [django.server       ]  "GET /admin/build/pictures/ HTTP/1.1" 200 28117
+2018-06-24 14:04:01,272 [Thread-4    ] [INFO ] [django.server       ]  "GET /admin/build/pictures/48/change/ HTTP/1.1" 200 7383
+2018-06-24 14:04:01,616 [Thread-5    ] [INFO ] [django.server       ]  "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+2018-06-24 14:06:14,533 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1092 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5e55e70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 14:22:56,289 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /build/random
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/mypicframe/build/views.py", line 185, in randomSelect
+    tpicture[0].last_used=datetime.datetime()
+TypeError: Required argument 'year' (pos 1) not found
+2018-06-24 14:23:00,034 [Thread-1    ] [ERROR] [django.server       ]  "GET /build/random HTTP/1.1" 500 72025
+2018-06-24 14:25:48,213 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1098 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5ea9e70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 14:26:37,377 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /build/random
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/mypicframe/build/views.py", line 185, in randomSelect
+    tpicture[0].last_used=datetime.fromtimestamp(time.time())
+AttributeError: 'module' object has no attribute 'fromtimestamp'
+2018-06-24 14:26:40,867 [Thread-1    ] [ERROR] [django.server       ]  "GET /build/random HTTP/1.1" 500 72162
+2018-06-24 14:27:07,871 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1068 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5e58e70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 14:27:20,427 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /build/random
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/mypicframe/build/views.py", line 185, in randomSelect
+    tpicture[0].last_used=datetime.date.fromtimestamp(time.time())
+NameError: global name 'time' is not defined
+2018-06-24 14:27:24,027 [Thread-1    ] [ERROR] [django.server       ]  "GET /build/random HTTP/1.1" 500 72009
+2018-06-24 14:28:17,907 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1046 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5f11e70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 14:28:31,711 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_XX_Sacramento/Scan220.jpg > /home/pi/mypicframe/tmp/Scan220.jpg
+2018-06-24 14:28:36,085 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/Scan220.jpg created
+2018-06-24 14:28:36,240 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/boneco_de_neve.jpg > /home/pi/mypicframe/tmp/boneco_de_neve.jpg
+2018-06-24 14:28:36,605 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/boneco_de_neve.jpg created
+2018-06-24 14:28:36,704 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/2000_05_28_Home/pic14792.jpg > /home/pi/mypicframe/tmp/pic14792.jpg
+2018-06-24 14:28:36,992 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/pic14792.jpg created
+2018-06-24 14:28:37,095 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/20171230_152217.jpg > /home/pi/mypicframe/tmp/20171230_152217.jpg
+2018-06-24 14:28:44,489 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/20171230_152217.jpg created
+2018-06-24 14:28:44,605 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/plazadowntonw01.jpg > /home/pi/mypicframe/tmp/plazadowntonw01.jpg
+2018-06-24 14:28:44,802 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/plazadowntonw01.jpg created
+2018-06-24 14:28:44,952 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/20171230_152143.jpg > /home/pi/mypicframe/tmp/20171230_152143.jpg
+2018-06-24 14:28:52,544 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/20171230_152143.jpg created
+2018-06-24 14:28:52,640 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/huummm3.jpg > /home/pi/mypicframe/tmp/huummm3.jpg
+2018-06-24 14:28:52,879 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/huummm3.jpg created
+2018-06-24 14:28:52,979 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/pic68229.jpg > /home/pi/mypicframe/tmp/pic68229.jpg
+2018-06-24 14:28:53,161 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/pic68229.jpg created
+2018-06-24 14:28:53,260 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/0000_00_00_Georgina/mama_002.jpg > /home/pi/mypicframe/tmp/mama_002.jpg
+2018-06-24 14:28:53,485 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/mama_002.jpg created
+2018-06-24 14:28:53,586 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/neve006.jpg > /home/pi/mypicframe/tmp/neve006.jpg
+2018-06-24 14:28:53,829 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/neve006.jpg created
+2018-06-24 14:28:53,915 [Thread-1    ] [INFO ] [django.server       ]  "GET /build/random HTTP/1.1" 200 1402
+2018-06-24 14:29:24,286 [Thread-3    ] [INFO ] [django.server       ]  "GET /admin/build/pictures/ HTTP/1.1" 200 28117
+2018-06-24 14:29:34,594 [Thread-4    ] [INFO ] [django.server       ]  "GET /admin/build/pictures/38/change/ HTTP/1.1" 200 7359
+2018-06-24 14:29:34,957 [Thread-5    ] [INFO ] [django.server       ]  "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+2018-06-24 14:30:43,827 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1075 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5e7ce70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 14:31:15,191 [Thread-1    ] [ERROR] [django.request      ]  Internal Server Error: /build/random/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/mypicframe/build/views.py", line 187, in randomSelect
+    tpicture[0].last_used=datetime.now()
+AttributeError: 'module' object has no attribute 'now'
+2018-06-24 14:31:18,522 [Thread-1    ] [ERROR] [django.server       ]  "GET /build/random/ HTTP/1.1" 500 70315
+2018-06-24 14:32:39,406 [MainThread  ] [ERROR] [pyinotify           ]  The pathname '/home/pi/mypicframe/build/views.py' of this watch <Watch wd=1073 path=/home/pi/mypicframe/build/views.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0xb5eb2e70> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/pi/mypicframe/build'.
+2018-06-24 14:32:55,973 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/neve004.jpg > /home/pi/mypicframe/tmp/neve004.jpg
+2018-06-24 14:32:56,246 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/neve004.jpg created
+2018-06-24 14:32:56,414 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/lanch.jpg > /home/pi/mypicframe/tmp/lanch.jpg
+2018-06-24 14:32:56,661 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/lanch.jpg created
+2018-06-24 14:32:56,767 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/leocris.jpg > /home/pi/mypicframe/tmp/leocris.jpg
+2018-06-24 14:32:57,091 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/leocris.jpg created
+2018-06-24 14:32:57,243 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/trickortreat01.jpg > /home/pi/mypicframe/tmp/trickortreat01.jpg
+2018-06-24 14:32:57,487 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/trickortreat01.jpg created
+2018-06-24 14:32:57,587 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/2000_05_28_Home/pic19622.jpg > /home/pi/mypicframe/tmp/pic19622.jpg
+2018-06-24 14:32:57,870 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/pic19622.jpg created
+2018-06-24 14:32:57,977 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/pavao01.jpg > /home/pi/mypicframe/tmp/pavao01.jpg
+2018-06-24 14:32:58,226 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/pavao01.jpg created
+2018-06-24 14:32:58,333 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_XX_Sacramento/Scan221.jpg > /home/pi/mypicframe/tmp/Scan221.jpg
+2018-06-24 14:33:02,643 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/Scan221.jpg created
+2018-06-24 14:33:02,751 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_05_XX_PasseioBicicletaEDS/Scan212.jpg > /home/pi/mypicframe/tmp/Scan212.jpg
+2018-06-24 14:33:06,926 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/Scan212.jpg created
+2018-06-24 14:33:07,030 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_11_31_Home/plazadowntonw01.jpg > /home/pi/mypicframe/tmp/plazadowntonw01.jpg
+2018-06-24 14:33:07,228 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/plazadowntonw01.jpg created
+2018-06-24 14:33:07,333 [Thread-1    ] [INFO ] [build.views         ]  Running: /usr/bin/jpegtran -optimize -progressive /home/pi/Pictures/1998_10_18_RenascenceFair/cabras.jpg > /home/pi/mypicframe/tmp/cabras.jpg
+2018-06-24 14:33:07,580 [Thread-1    ] [INFO ] [build.views         ]  Done: file /home/pi/mypicframe/tmp/cabras.jpg created
+2018-06-24 14:33:07,674 [Thread-1    ] [INFO ] [django.server       ]  "GET /build/random/ HTTP/1.1" 200 1586
+2018-06-24 14:33:30,516 [Thread-3    ] [INFO ] [django.server       ]  "GET /admin/build/pictures/ HTTP/1.1" 200 28117
+2018-06-24 14:33:41,991 [Thread-4    ] [INFO ] [django.server       ]  "GET /admin/build/pictures/78/change/ HTTP/1.1" 200 7387
+2018-06-24 14:33:42,353 [Thread-5    ] [INFO ] [django.server       ]  "GET /admin/jsi18n/ HTTP/1.1" 200 3217
